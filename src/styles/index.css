@@ -1,0 +1,51 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a basic font for the entire document */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px; /* Increase padding for better spacing */
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  margin-top: 20px; /* Increase top margin for better spacing */
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px; /* Increase horizontal margin for better spacing */
+  text-decoration: none;
+}
+
+/* Main content styles */
+section {
+  padding: 30px; /* Increase padding for better spacing */
+  margin-top: 20px; /* Increase top margin for better spacing */
+}
+
+.main-content {
+  min-height: 1000vh;
+  /* Add other styling properties as needed */
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.page-content {
+  z-index: 1;
+  padding-bottom: 20px;
+}

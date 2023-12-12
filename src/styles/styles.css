@@ -1,0 +1,91 @@
+/* styles/styles.css */
+
+/*Reset some default browser styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Set a basic font for entire document */
+
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/*Header Style*/
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px; /* Increase horizontal margin for better spacing */
+  text-decoration: none;
+}
+
+.logo {
+  width: 250px; /* Adjust as needed */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.quadrant {
+  background-color: #ddd;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-us {
+  padding: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
