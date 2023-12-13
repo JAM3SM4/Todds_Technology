@@ -1,28 +1,54 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+
+// Importing components for different sections of the website
+
 import AboutUs from './components/AboutUs/AboutUs';
-import EducationTraining from './components/EducationTraining/EducationTraining';
+import BlogPage from './components/BlogPage/BlogPage';
+import CodeSamples from './components/CodeSamples/CodeSamples';
+import ContactUs from './components/ContactUs/ContactUs';
+import DomainSpecific from './components/DomainSpecific/DomainSpecific';
+import Education from './components/Education/Education';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Languages from './components/Languages/Languages';
+import Main from './components/Main/Main';
+import Portfolio from './components/Portfolio/Portfolio';
+import Projects from './components/Projects/Projects';
+import Resume from './components/Resume/Resume';
 import Services from './components/Services/Services';
 import Skills from './components/Skills/Skills';
-import ContactUs from './components/ContactUs/ContactUs';
-import Footer from './components/Footer/Footer';
+import Technologies from './components/Technologies/Technologies';
+
 import './styles/styles.css';
 
+// Routes
+
+const routes = [
+  { path: '/', element: <Main /> },
+  { path: '/about', element: <AboutUs /> },
+  { path: '/blogpage', element: <BlogPage/> },
+  { path: '/codesamples', element: <CodeSamples />},
+  { path: '/contact', element: <ContactUs /> },
+  { path: '/domainspecific', element: <DomainSpecific /> },
+  { path: '/education', element: <Education /> },
+  { path: '/languages', element: <Languages />},
+  { path: '/portfolio', element: <Portfolio /> },
+  { path: '/projects', element: <Projects /> },
+  { path: '/resume', element: <Resume /> },
+  { path: '/services', element: <Services /> },
+  { path: '/skills', element: <Skills /> },
+  { path: '/technologies', element: <Technologies />},
+ 
+];
 
 const App = () => (
   <Router>
     <Header />
     <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/about" element={<AboutUs />} />
-      <Route path="/education" element={<EducationTraining />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/Skills" element={<Skills/>} />
-      <Route path="/contact" element={<ContactUs />} />
+      {routes.map(({ path, element }) => (
+        <Route key={path} path={path} element={element} />
+      ))}
     </Routes>
     <Footer />
   </Router>

@@ -16,27 +16,64 @@ body {
 /*Header Style*/
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #333; /* Add a background color to the header for better visibility */
 }
 
 nav {
   display: flex;
-  gap: 1rem;
+  gap: 10px;
+  cursor: pointer;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 15px; /* Increase horizontal margin for better spacing */
   text-decoration: none;
+  color: #fefefe; /* Adjust link color */
+  font-weight: bold; /* Add some boldness to the font */
+  margin-right: 10px;
+
+}
+
+/* Adjust the styling for links on hover */
+nav a:hover {
+  color: #007bff; /* Change link color on hover */
+
 }
 
 .logo {
-  width: 250px; /* Adjust as needed */
+  max-width: 100%; /* Ensure the logo stays within the container */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  color: white;
+  display: none;
+  position: absolute;
+  background-color: #555;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  list-style: none;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 8px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 main {
@@ -89,3 +126,289 @@ button {
   cursor: pointer;
 }
 
+.logo-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
+gap: 20px; /* Adjust the gap between logos as needed */
+justify-content: center; /* Center logos horizontally */
+align-items: center; /* Center logos vertically */
+max-width: 800px; /* Adjust the maximum width as needed */
+margin: 0 auto; /* Center the container */
+}
+
+.partner-logo {
+  width: 100%; /* Set a fixed width for each logo */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100px; /* Set a maximum width to prevent logos from becoming too large */
+  max-height: 100px; /* Set a maximum height to prevent logos from becoming too large */
+  
+}
+.partners-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Adjust as needed */
+  gap: 20px; /* Adjust the gap between logos as needed */
+  justify-content: center; 
+  margin-top: 20px; /* Add margin for separation */
+}
+
+.portfolio-logo {
+  width: 100%; /* Set a fixed width for each logo */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100px; /* Set a maximum width to prevent logos from becoming too large */
+  max-height: 100px; /* Set a maximum height to prevent logos from becoming too large */
+  
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Contact info styles */
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px; /* Adjust the gap between certificates */
+  justify-content: center; /* Center the grid horizontally */
+  align-items: center; /* Center the grid vertically */
+}
+
+.certificate {
+  text-align: center; /* Center the content inside each certificate */
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* CodeSamplesPage.css */
+
+.code-samples-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.code-sample {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* ProjectPage.css */
+
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-details {
+  margin-top: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.project-links a:hover {
+  background-color: #0056b3;
+}
+
+/* WebDevelopmentProjectsPage.css */
+
+.web-development-projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.project-card h2 {
+  color: #007bff;
+}
+
+.project-card p {
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.project-links a:hover {
+  background-color: #0056b3;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* PortfolioPage.css */
+.project-image {
+  max-width: 100%;
+  max-height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.achievement-image {
+  max-width: 100%;
+  max-height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+.portfolio-container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-section, .achievement-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+  flex: 1 0 calc(50% - 20px); /* Adjust the width and gap as needed */
+}
+
+
+.project-section h2, .achievement-section h2 {
+  color: #007bff;
+}
+
+.project-section p, .achievement-section p {
+  margin-top: 10px;
+}
+
+.project-section a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.project-section a:hover {
+  background-color: #0056b3;
+}
+
+.project-sections, .achievement-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.partners-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.technology {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.partner-logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}

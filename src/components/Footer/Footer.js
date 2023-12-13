@@ -1,28 +1,33 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faHandshake } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => (
-  <footer className="footer">
+  <footer>
     <div className="footer-content">
       <div className="footer-section contact-info">
-        <h3>Contact Us</h3>
+        <h3>Contact Me</h3>
         <p>
-          📧 Email: <a href="mailto:info@toddstech.com">info@toddstech.com</a>
+          Email: <a href="mailto:james.ja.nelson@gmail.com">james.ja.nelson@gmail.com</a>
         </p>
         <p>
-          ☎️ Phone: +1 (123) 456-7890
+          Phone: (+44) 7790 715 729
+          Phone: (+1)  201-519-5809
         </p>
       </div>
 
       <div className="footer-section company-info">
-        <h3>Company Info</h3>
+        <h3>My Whereabouts</h3>
         <p>
-          📍 Address: 123 Tech Street, Tech City
-        </p>
-        <p>
-          🏢 Company Name: Todds Tech
+          Address: Lisburn, UK | Ridgewood, USA 
         </p>
       </div>
-      {/* Add more sections as needed */}
+      <div className="footer-section social-media-icons">
+        <h3>Connect with Me</h3>
+        <a href="https://www.linkedin.com/in/jamesjanelson" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+      </a>
+      </div>
     </div>
   </footer>
 );

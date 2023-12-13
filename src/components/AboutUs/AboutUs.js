@@ -5,7 +5,7 @@ const AboutUs = () => (
   <section id="about-us">
     <h2>About Us</h2>
     <p>
-      Welcome to Todds Tech, where innovation meets expertise. Our team is dedicated to delivering
+      Welcome to Jim-Tech, where innovation meets expertise. Our team is dedicated to delivering
       cutting-edge solutions and top-notch services in the field of technology.
     </p>
 
@@ -19,7 +19,7 @@ const AboutUs = () => (
         <h3>Joeseph Santorini</h3>
         <p>Founder & CEO</p>
         <p>
-          With a passion for technology and a vision for the future, Joeseph founded Todds Tech to
+          With a passion for technology and a vision for the future, James to
           empower businesses through innovative solutions.
         </p>
       </div>

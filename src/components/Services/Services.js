@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => (
   <section id="services">
-    <h2>Our Services for Medium-Sized Businesses</h2>
+    <h2>My Services for Businesses like yours</h2>
     <ul>
       <li>
         <h3>Custom Software Development</h3>
@@ -27,6 +27,22 @@ const Services = () => (
       <li>
         <h3>Technology Integration</h3>
         <p>Integrate and optimize technologies to enhance your business operations.</p> 
+      </li>
+
+      {/* GitHub Integration */}
+      <li>
+        <h3>GitHub Integration</h3>
+        <p>Utilize GitHub, a powerful platform for version control and collaborative software development, in your projects.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Version control for code collaboration</li>
+          <li>Project management with GitHub Issues</li>
+          <li>Collaborative development with pull requests</li>
+        </ul>
+        <p>Link to GitHub:</p>
+        <a href="https://github.com/jamesjan25" target="_blank" rel="noopener noreferrer">
+          <img src="/github-mark.png" alt="GitHub Logo" />
+        </a>
       </li>
     </ul>
   </section>
